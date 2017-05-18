@@ -20,7 +20,7 @@ console.log(token)
 var mongoose = require('mongoose');
 
 // database is called music_station
-mongoose.connect(process.env.MLAB_USER);
+mongoose.connect('mongodb://user:password@ds139781.mlab.com:39781/the-best-musicstation');
 const { connection: db } = mongoose;
 
 db.on('error', console.error.bind(console, 'connection error:'));
